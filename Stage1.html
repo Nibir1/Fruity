@@ -1,0 +1,150 @@
+<html lang="us-en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Fruity</title>
+  </head>
+  <body>
+    <!-- Where the random fruits will generate both on page load and on shuffle clicked -->
+    <figure id="fruit-background">
+      <img src="./img/Orange.png" alt="Orange" id="fruit-identify" />
+    </figure>
+
+    <!-- Shuffle button for generating random fruits -->
+    <section>
+      <button id="shuffle" class="button-text-design">Shuffle</button>
+    </section>
+
+    <!-- Pear Cheering Guy -->
+    <figure>
+      <img
+        src="./img/Pear_Cheering.png"
+        alt="Pear_Cheering"
+        id="pear-cheering"
+      />
+    </figure>
+
+    <!-- Banana Cheering Guy -->
+    <figure>
+      <img
+        src="./img/Banana_Cheering.png"
+        alt="Banana_Cheering"
+        id="banana-cheering"
+      />
+    </figure>
+
+    <section>
+      <!-- Question on whats the name of the fruit that generated randomly -->
+      <label class="question">
+        <p>Can You Guess The Name Of This Fruit?</p>
+      </label>
+
+      <!-- Buttons for answering the question -->
+      <div class="question-ans-button">
+        <button id="fruit-identifying-questions-answer"></button>
+        <button id="fruit-identifying-questions-answer"></button>
+        <button id="fruit-identifying-questions-answer"></button>
+      </div>
+    </section>
+
+    <!-- Responsible for showing the result -->
+    <div>
+      <label class="result">Result</label>
+      <label class="result-value" id="section01-result"></label>
+    </div>
+
+    <!-- Pops up after successfully clicking the right answer.Clicking this takes to stage2.html  -->
+    <div>
+      <a href="#Stage02">
+        <button class="learn-more" id="cngrts-lets-learn-more">
+          Congrats! Lets Learn More
+        </button>
+      </a>
+    </div>
+
+    <!-- ------------------------------------------------------Second Stage Starts Here------------------------------------------------------ -->
+
+    <h1 class="about-fruit-header">
+      About- <span id="about-fruit-name">Orange</span>
+    </h1>
+
+    <!-- Information about the fruit that generated on stage1 -->
+    <article id="fruit-info">
+      <p></p>
+    </article>
+
+    <!-- Watermelon Beach Guy Image -->
+    <figure>
+      <img
+        src="./img/Watermelon_beach.png"
+        alt="Watermelon_beach"
+        id="Watermelon-beach"
+      />
+    </figure>
+
+    <!-- Questions Based On The Fruit Information -->
+    <section>
+      <h2 class="heading">Quiz Time</h2>
+
+      <!-- 1st Question Elements -->
+      <section>
+        <!-- 1st Question -->
+        <label class="quiz-question">
+          <p id="question01"></p>
+        </label>
+
+        <!-- Buttons for answering the 1st question -->
+        <div class="quiz-question-ans-button">
+          <button id="question01-answer"></button>
+          <button id="question01-answer"></button>
+          <button id="question01-answer"></button>
+        </div>
+      </section>
+
+      <!-- 2nd Question Elements -->
+      <section id="quiz-question-position">
+        <!-- 2nd Question -->
+        <label class="quiz-question">
+          <p id="question02"></p>
+        </label>
+
+        <!-- Buttons for answering the 2nd question -->
+        <div class="quiz-question-ans-button">
+          <button id="question02-answer"></button>
+          <button id="question02-answer"></button>
+          <button id="question02-answer"></button>
+        </div>
+      </section>
+
+      <!-- Submit Clickable -->
+      <button id="submit">Submit</button>
+
+      <!-- Result Panel -->
+      <div id="result-positioning">
+        <label class="result" id="Stage02">Result</label>
+        <label class="result-value" id="section02-result"></label>
+      </div>
+
+      <!-- Pops up after successfully clicking the right answer.Clicking this takes back to stage1.html Section 1 ( Which basically reloads the page ) -->
+      <div>
+        <a href="./Stage1.html">
+          <button id="continue-learning-more">Let's Continue Learning</button>
+        </a>
+      </div>
+    </section>
+
+    <script src="./Stage1.js"></script>
+  </body>
+</html>

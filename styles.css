@@ -1,0 +1,533 @@
+/* Root Variables */
+:root {
+    --clr-background: #F9975D;
+    --clr-foreground: #000000;
+    --clr-primary: #FBD148;
+    --clr-secondary: #B2EA70;
+}
+
+/* Document Body Informations */
+html, body{
+    background-color: var(--clr-background);
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.1em;
+    color: var(--clr-foreground);
+}
+
+/* Fruity Header Styling on Homepage */
+.headline{
+    position: absolute;
+}
+
+/* Background Image of the Fruity Header */
+.headline img:nth-of-type(1){
+    position: absolute;
+    left: 506px;
+    top: 37px;
+}
+
+/* Image of the Watermelon Guy On Header */
+.headline img:nth-of-type(2){
+    position: absolute;
+    width: 228px;
+    height: 267px;
+    left: 278px;
+    top: 134px;
+}
+
+/* Fruity Headline */
+.headline h1{
+    position: absolute;
+    left: 547px;
+    top: 70px;
+
+    font-family: Coming Sans Free Trial;
+    font-size: 144px;
+    line-height: 186px;
+
+    color: var(--clr-foreground);
+}
+
+/* Intro Man image */
+#Intro-Man{
+    position: absolute;
+    width: 528px;
+    height: 790px;
+    left: 1114px;
+    top: 30px;
+}
+
+/* Quote Styling */
+#quote{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 35px 37px;
+
+    position: absolute;
+    width: 737px;
+    height: 235px;
+    left: 313px;
+    top: 428px;
+
+    background: var(--clr-primary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px 0px 40px 40px;
+}
+
+#quote p{
+    position: static;
+    width: 687px;
+    height: 165px;
+
+    font-size: 48px;
+    line-height: 55px;
+
+    color: var(--clr-foreground);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Inspiration Section  */
+#inspire{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 18px;
+
+    position: absolute;
+    width: 655px;
+    height: 166px;
+    left: 63px;
+    top: 697px;
+
+    background: var(--clr-secondary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 40px 40px 40px;
+}
+
+#inspire p{
+    position: static;
+    width: 619px;
+    height: 126px;
+    left: 18px;
+    top: 20px;
+
+    font-size: 48px;
+    line-height: 55px;
+
+    color: var(--clr-foreground);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+/* Banana Guy Before Start Learning */
+#banana-guy{
+    position: absolute;
+    width: 172px;
+    height: 274px;
+    left: 892px;
+    top: 679px;
+}
+
+/* Start Learning Button and Background */
+#start-learning-button{
+    position: absolute;
+    width: 448px;
+    height: 92px;
+    left: 1132px;
+    top: 825px;
+
+    background: var(--clr-primary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.button-text-design{
+    font-family: 'Comic Neue', cursive;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 62px;
+    color: var(--clr-foreground);
+}
+
+/* ----------------Affecting Stage1 html file----------------  */
+
+/* Background of the fruit where it will generate */
+#fruit-background{
+    position: absolute;
+    width: 628px;
+    height: 474px;
+    left: 600px;
+    top: 95px;
+
+    background: #F9A85D;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+/* Fruit That will generate */
+#fruit-identify{
+    position: absolute;
+    width: 455px;
+    height: 446px;
+    left: 95px;
+    top: 10px;
+}
+
+/* Shuffle button styling */
+#shuffle{
+    position: absolute;
+    width: 315px;
+    height: 92px;
+    left: 230px;
+    top: 278px;
+
+    background: var(--clr-primary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+/* Pear Cheering Guy */
+#pear-cheering{
+    position: absolute;
+    width: 346.64px;
+    height: 430.4px;
+    left: 150px;
+    top: 353px;
+    transform: rotate(7.95deg);
+}
+
+/* Banana Cheering Guy */
+#banana-cheering{
+    position: absolute;
+    width: 368.12px;
+    height: 568.7px;
+    left: 1350px;
+    top: 80px;
+    transform: rotate(25deg);
+}
+
+/* Question Styling */
+.question {
+    position: absolute;
+    width: 910px;
+    height: 80px;
+    left: 455px;
+    top: 600px;
+
+    background: var(--clr-secondary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.question p{
+    position: absolute;
+    width: 833px;
+    height: 55px;
+    left: 40px;
+    top: 10px;
+
+    font-size: 48px;
+    line-height: 55px;
+
+    color: var(--clr-foreground);
+}
+
+/* Question answering button styling  */
+.question-ans-button button{
+    position: absolute;
+    width: 210px;
+    height: 61px;
+    left: 600px;
+    top: 700px;
+
+    background: var(--clr-primary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 20px 20px 20px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+
+    color: #000000;
+}
+
+.question-ans-button button:nth-of-type(2){
+    border-radius: 30px;
+    left: 806px;
+    top: 780px;
+}
+
+.question-ans-button button:nth-of-type(3){
+    border-radius: 20px 0px 20px 20px;
+    left: 1015px;
+    top: 700px;
+}
+
+/* Result Styling */
+.result{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 62px;
+
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    left: 540px;
+    top: 870px;
+
+    background: #FF8B00;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+    color: var(--clr-foreground);
+}
+
+.result-value{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 62px;
+
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 800px;
+    top: 870px;
+
+    background: #B2EA70;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 20px 20px 0px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+    color: var(--clr-foreground);
+}
+
+.learn-more{
+    display: none;
+    position: absolute;
+    width: 222px;
+    height: 192px;
+    left: 1544px;
+    top: 720px;
+
+    background: #BE4B2E;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+    color: #FFF9D7;
+}
+
+/* ----------------Affecting Stage1 Section 2 html file----------------  */
+
+/* About Fruit Header Info */
+.about-fruit-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3px 50px;
+
+    position: absolute;
+    width: 350px;
+    height: 58px;
+    left: 93px;
+    top: 1000px;
+
+    background: #FBD148;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px 15px 15px 0px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+    color: var(--clr-foreground);
+}
+
+/* Fruit Information */
+#fruit-info{
+    position: absolute;
+    width: 890px;
+    height: 257px;
+    left: 93px;
+    top: 1100px;
+
+    background: #F9A85D;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 30px 30px 30px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 37px;
+    line-height: 43px;
+    color: var(--clr-foreground);
+}
+
+/* Watermelon Beach Guy */
+
+#Watermelon-beach{
+    position: absolute;
+    width: 784px;
+    height: 594px;
+    left: 1054px;
+    top: 1000px;
+}
+
+/* Quiz Time Heading Styling */
+.heading{
+    position: absolute;
+    width: 210px;
+    height: 61px;
+    left: 610px;
+    top: 1400px;
+    padding: 3px 38px;
+    
+    background: #BE4B2E;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFF9D7;
+}
+
+/* Question Styling */
+.quiz-question {
+    position: absolute;
+    width: 900px;
+    height: 50px;
+    left: 275px;
+    top: 1500px;
+
+    background: var(--clr-secondary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.quiz-question p{
+    position: absolute;
+    width: 833px;
+    height: 55px;
+    left: 40px;
+    padding: 0px 60px;
+
+    font-size: 38px;
+    line-height: 55px;
+
+    color: var(--clr-foreground);
+}
+
+/* Question answering button styling  */
+.quiz-question-ans-button button{
+    position: absolute;
+    width: 199.67px;
+    height: 40px;
+    left: 394px;
+    top: 1565px;
+    padding: 0 0 40px;
+
+    background: var(--clr-primary);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 20px 20px 20px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+
+    color: #000000;
+}
+
+.quiz-question-ans-button button:nth-of-type(2){
+    border-radius: 30px;
+    left: 615px;
+}
+
+.quiz-question-ans-button button:nth-of-type(3){
+    border-radius: 20px 0px 20px 20px;
+    left: 836px;  
+}
+
+#quiz-question-position{
+    position: absolute;
+    top: 120px;
+}
+
+/* Quiz answer submitting  */
+#submit{
+    position: absolute;
+    width: 210px;
+    height: 61px;
+    left: 616px;
+    top: 1750px;
+
+    background: #BE4B2E;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFF9D7;
+}
+
+/* Repositioning result elements */
+#result-positioning label:nth-of-type(1){
+    left: 350px;
+    top: 1850px;
+}
+
+#result-positioning label:nth-of-type(2){
+    left: 620px;
+    top: 1850px;
+}
+
+#continue-learning-more{
+    display: none;
+    position: absolute;
+    width: 222px;
+    height: 192px;
+    left: 1500px;
+    top: 1650px;
+
+    background: #BE4B2E;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    line-height: 50px;
+    color: #FFF9D7;
+}
